@@ -4,6 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Each tile is it's own object. There are mapSize * 2 number of tiles in game.
+//The tiles have their own position are are able to be interacted with to place objects.
+//When selecting a tile for object placement, the tile calculates the tiles needed to place the object based on its size, and tells those tiles to accept that object (if they can)
 public class Tile : MonoBehaviour
 {
 
