@@ -44,6 +44,7 @@ public class Crop : TileableObjects
     }
 
     //This string comes from the database and is given it's informantion from the copy.
+    //Also subtracts the time since last log in from the growth time remaining, to give the appearance of offline growth.
     public void Parse(string data)
     {
         string[] dataList = data.Split('?');
